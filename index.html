@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <title>Wheather App Developed by Masome Mahmudi</title>
+    <link rel="stylesheet" href="assest/styles/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <main>
+        <div class="window">
+            <div class="first_sec">
+                <div class="umbrella">
+                    <div class="bg"></div>
+                </div>
+                <div class="statrted">
+                    <div class="logo"></div>
+                    <h1><a href="https://github.com/masiimc" target="_blank">Masome Mahmudi</a></h1>
+                    <p>Wheather App</p>
+                    <button id="enter">get started</button>
+                </div>
+            </div>
+            <div class="last_sec d-none">
+                <div class="menubar">
+                    <div class="menu_logo"></div>
+                    <div class="whather_icon" id="wheather">
+                        <i class="bi bi-cloud-sun-fill"></i>
+                        <p>wheather</p>
+                    </div>
+                    <div id="city">
+                        <i class="bi bi-list-stars"></i>
+                        <p>cities</p>
+                    </div>
+                    <div id="mapbtn">
+                        <i class="bi bi-globe-central-south-asia"></i>
+                        <p>map</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" onkeyup="get(event)" id="inp1" placeholder="Search for cities">
+                </div>
+                <div class="showfield">
+                    <div class="wheatheField d-none"></div>
+                    <div class="citiesfiled d-none"></div>
+                    <div class="map d-none">
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a  href="https://github.com/masiimc" target="_blank" id="developer">Developed By Masome Mahmudi</a>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
